@@ -50,7 +50,7 @@ This project simulates an online bookstore database and demonstrates practical S
    - **In pgAdmin 4:** `\c` will not work here — instead, refresh the **Databases** node in the left Object Explorer, click on the new `OnlineBookStore` database to connect to it, then open a **new Query Tool** window on that database before running the rest of the script.
 2. Run the rest of `Portfolio_Project.sql` to create the schema and tables.
 3. **Import the data.** The `COPY` commands use a local Windows file path (e.g. `C:\Users\pavan\...`) — this will only work on the original machine. To run this yourself:
-   - Get the `Books.csv`, `Customers.csv`, and `Orders.csv` files (included in this repo under `/data`), and
+   - Get the `Books.csv`, `Customers.csv`, and `Orders.csv` files (included in this repo), and
    - Replace the file path in each `COPY` command with the full path to that CSV file on **your own machine** — for example:
      ```sql
      COPY bookstore.books(book_id, title, author, genre, published_year, price, stock)
